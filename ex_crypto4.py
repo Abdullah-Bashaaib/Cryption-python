@@ -16,11 +16,11 @@ ciphertext = ciphertext.upper()
 
 # حساب تردد الحروف في النص المشفر
 letter_count = Counter(filter(str.isalpha, ciphertext))  # فقط الحروف، تجاهل المسافات والعلامات
-print(letter_count) # عبارة عن دكشنري يخط فيه كل حرف كم تردد
+# print(letter_count) # عبارة عن دكشنري يخط فيه كل حرف كم تردد
 
 # ترتيب الحروف في النص المشفر بناءً على تكرارها
 most_common_cipher_letters = [pair[0] for pair in letter_count.most_common()]
-print(most_common_cipher_letters)
+# print(most_common_cipher_letters)
 
 # مقارنة تردد الحروف المشفرة مع ترددات اللغة الإنجليزية
 # افتراض أن أكثر حرف متكرر في النص المشفر يقابل E
